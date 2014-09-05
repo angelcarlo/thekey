@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+    <script>
+  $(document).ready(function(){
+ 
+$('#showcollegelife').click(function(){
+$('#collegelife').slideToggle(300);
+ $('#collegelife').show();
+});
+  
+ 
+$('#createaccount').click(function(){
+$('#DIVLOGIN').hide();
+$('#txtlogin').hide();
+$('#DIVREGISTRATION').slideToggle(300);
+$('#DIVREGISTRATION').show();
+$('#txtregistration').show();
+});
+ 
+
+$('#cancel').click(function(){
+$('#DIVREGISTRATION').hide();
+$('#txtregistration').hide();
+$('#DIVLOGIN').slideToggle(300);
+$('#DIVLOGIN').show();
+$('#txtlogin').show();
+}); 
+  });
+  </script>
+  <style>
+
+  </style>
+  
+  
+  </head>
+<body>
+  <div data-role="page" id="mainpage">
+<!-- this panel -->
+    <div data-role="panel" id="panel" data-position="right" data-display="push" style= "background: #a30045;">
+	  <a data-role="button" href="#logreg" data-transition="flip"  data-icon="flat-new" data-theme="f">ONLINE</a>
+	</div>
+<!-- this end of panel -->	
+	
+<!--this menu -->
+    <div data-role="header" id="head">
+      <a href="#mainpage" style="display: none;"></a>
+	  <h3>GC SWS</h3>
+      <a data-iconpos="notext" href="#panel" data-role="button" data-theme="b" data-icon="flat-menu"></a>
+    </div>
+
+<div data-role="content" role="main" >
+<div align="center">
+		<img src="img/BANNER.png" width="90%" height="90%"/>
+</div>	
+
+
+<table>
+		<div id="ui-body-test" class="ui-body ui-corner-al"  style="background: #3498DB">
+		<div  style="background: #2980B9">
+		<div style="color: white;"><p>I am a div with classes  <br /> ui-body, ui-body-<span class="theme">a</span> and ui-corner-all.</p> </div>
+		</div>
+		<div style="color: white;"><p>I am a div with classes ui-body, ui-body-<span class="theme">a</span> and ui-corner-all.</p> </div>
+		</div>
+	
+<br />
+		<div id="ui-body-test" class="ui-body"  style="background: #E67E22">
+		<div style="color: white;"><p>I am a div with classes ui-body, ui-body-<span class="theme">a</span> and ui-corner-all.</p> </div>
+		</div>
+		<div id="ui-body-test" class="ui-body"  style="background: #D35400">
+		<div style="color: white;"><p>I am a div with classes ui-body, ui-body-<span class="theme">a</span> and ui-corner-all.</p> </div>
+		</div>	
+		
+<br />
+		<div id="ui-body-test" class="ui-body"  style="background: #2ECC71">
+		<div style="color: white;"><p>I am a div with classes ui-body, ui-body-<span class="theme">a</span> and ui-corner-all.</p> </div>
+		</div>
+		<div id="ui-body-test" class="ui-body"  style="background: #27AE60">
+		<div style="color: white;"><p>I am a div with classes ui-body, ui-body-<span class="theme">a</span> and ui-corner-all.</p> </div>
+		</div>	
+</table>
+	
+	  <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+        <div data-role="collapsible" data-collapsed-icon="flat-time" data-expanded-icon="flat-cross" data-collapsed="false">
+          <h3>Section 1</h3>
+          <p>I'm the collapsible content for section 1</p>
+		  <p>I'm the collapsible content for section 1</p>
+		  <p>I'm the collapsible content for section 1</p>
+		  <p>I'm the collapsible content for section 1</p>
+		  <p>I'm the collapsible content for section 1</p>
+		  <p>I'm the collapsible content for section 1</p>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="flat-calendar" data-expanded-icon="flat-cross">
+          <h3>Section 2</h3>
+          <p>I'm the collapsible content for section 2</p>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+          <h3>Section 3</h3>
+          <p>I'm the collapsible content for section 3</p>
+        </div>
+      </div>
+	
+	
+	
+      <p>Sample text and <a href="#">links</a>.</p>
+      <fieldset class="ui-grid-a">
+        <div class="ui-block-a"><button data-icon="flat-settings" data-theme="a">Button A</button></div>
+        <div class="ui-block-b"><button data-icon="flat-new" data-theme="b">Button B</button></div>
+      </fieldset>
+      <fieldset class="ui-grid-a">
+        <div class="ui-block-a"><button data-icon="flat-man" data-theme="c">Button C</button></div>
+        <div class="ui-block-b"><button data-icon="flat-mail" data-theme="d">Button D</button></div>
+      </fieldset>
+      <fieldset class="ui-grid-a">
+        <div class="ui-block-a"><button data-icon="flat-lock" data-theme="e">Button E</button></div>
+        <div class="ui-block-b"><button data-icon="flat-menu" data-theme="f">Button F</button></div>
+      </fieldset>
+      <fieldset class="ui-grid-a">
+        <div class="ui-block-a"><button data-icon="flat-heart" data-theme="g">Button G</button></div>
+      </fieldset>
+
+      <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider" data-theme="a">List Header</li>
+        <li>Read-only list item</li>
+        <li><a href="#">Linked list item</a></li>
+      </ul>
+
+    
+
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+          <input type="radio" name="radio-choice-a" data-theme="c" id="radio-choice-1-a" value="choice-1" checked="checked" />
+          <label for="radio-choice-1-a">Radio 1</label>
+
+          <input type="radio" name="radio-choice-a" data-theme="c" id="radio-choice-1-b" value="choice-2"  />
+          <label for="radio-choice-1-b">Radio 2</label>
+          <input type="checkbox" name="checkbox-a" data-theme="c" id="checkbox-a" checked="checked" />
+          <label for="checkbox-a">Checkbox</label>
+        </fieldset>
+      </div>
+
+      <div data-role="fieldcontain">
+        <a href="#" data-role="button" data-icon="home" data-iconpos="notext" data-theme="b" data-inline="true">Home</a>
+        <a href="#" data-role="button" data-icon="flat-video" data-iconpos="notext" data-theme="b" data-inline="true">Video</a>
+        <a href="#" data-role="button" data-icon="flat-time" data-iconpos="notext" data-theme="b" data-inline="true">Time</a>
+        <a href="#" data-role="button" data-icon="flat-settings" data-iconpos="notext" data-theme="b" data-inline="true">Settings</a>
+        <a href="#" data-role="button" data-icon="flat-plus" data-iconpos="notext" data-theme="b" data-inline="true">Plus</a>
+        <a href="#" data-role="button" data-icon="flat-new" data-iconpos="notext" data-theme="b" data-inline="true">New</a>
+        <a href="#" data-role="button" data-icon="flat-menu" data-iconpos="notext" data-theme="b" data-inline="true">Menu</a>
+        <a href="#" data-role="button" data-icon="flat-man" data-iconpos="notext" data-theme="b" data-inline="true">Man</a>
+        <a href="#" data-role="button" data-icon="flat-mail" data-iconpos="notext" data-theme="b" data-inline="true">Mail</a>
+        <a href="#" data-role="button" data-icon="flat-lock" data-iconpos="notext" data-theme="b" data-inline="true">Lock</a>
+        <a href="#" data-role="button" data-icon="flat-location" data-iconpos="notext" data-theme="b" data-inline="true">Location</a>
+        <a href="#" data-role="button" data-icon="flat-heart" data-iconpos="notext" data-theme="b" data-inline="true">Heart</a>
+        <a href="#" data-role="button" data-icon="flat-eye" data-iconpos="notext" data-theme="b" data-inline="true">Eye</a>
+        <a href="#" data-role="button" data-icon="flat-cross" data-iconpos="notext" data-theme="b" data-inline="true">Cross</a>
+        <a href="#" data-role="button" data-icon="flat-cmd" data-iconpos="notext" data-theme="b" data-inline="true">Cmd</a>
+        <a href="#" data-role="button" data-icon="flat-checkround" data-iconpos="notext" data-theme="b" data-inline="true">Checkround</a>
+        <a href="#" data-role="button" data-icon="flat-calendar" data-iconpos="notext" data-theme="b" data-inline="true">Calendar</a>
+        <a href="#" data-role="button" data-icon="flat-bubble" data-iconpos="notext" data-theme="b" data-inline="true">Bubble</a>
+        <a href="#" data-role="button" data-icon="flat-volume" data-iconpos="notext" data-theme="b" data-inline="true">Volume</a>
+        <a href="#" data-role="button" data-icon="flat-camera" data-iconpos="notext" data-theme="b" data-inline="true">Camera</a>
+      </div>
+
+      <select name="flip-1" id="flip-1" data-role="slider">
+        <option value="off">Off</option>
+        <option value="on" selected>On</option>
+      </select>
+
+      <div data-role="fieldcontain">
+        <div data-role="controlgroup" data-type="horizontal">
+          <a href="#" data-icon="flat-mail" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
+          <a href="#" data-icon="flat-camera" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
+          <a href="#" data-icon="flat-heart" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
+          <a href="#" data-icon="flat-eye" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
+        </div>
+      </div>
+
+      <div data-role="fieldcontain">
+        <select name="select-choice" id="select-choice-a" data-native-menu="false" data-theme="a">
+          <option value="standard">Option 1</option>
+          <option value="rush">Option 2</option>
+          <option value="express">Option 3</option>
+          <option value="overnight">Option 4</option>
+        </select>
+      </div>
+
+      <input type="text" placeholder="Text Input" />
+      <div data-role="fieldcontain">
+        <input type="range" name="slider" value="50" min="0" max="100" data-highlight="true" />
+      </div>
+    </div>
+<!--this end of menu -->	
+				
+<!--this footer -->	
+<div   data-role="footer" data-theme="transparent" style="border:0" data-position="fixed">
+<div data-role="navbar">		
+					<table  >
+					<tr>
+					<td >
+						<a href="#offices" data-transition="flip" style="background:#2980b9 " align="center"><img src="img/nearby.png" width="80%"  height="30%"/></a>
+					</td>
+					<td >
+						<a href="#studentmanual" style="background:#E67E22" data-transition="flip" align="center"><img src="img/quake.png" width="80%"  height="30%"/></a>
+					</td>
+					<td >
+						<a href="#survivalkit" data-transition="flip"  style="background:#2ECC71"  align="center"><img src="img/weather.png" width="80%"  height="30%"/></a>
+					</td >
+					</tr>
+					</table>
+</div>
+
+</div>
+<!--this end of footer -->			
+  </div>
+
+  
+  <!--OFFICES -->
+<div data-role="page" id="offices">
+<div data-role="header" >
+      <a href="#mainpage" data-transition="flip" data-iconpos="notext" data-role="button" data-icon="home" data-theme="b" title="Home">Home</a>
+      <h1>OFFICES</h1>
+   
+</div>
+<div data-role="content" role="main" >
+	  <div data-role="collapsible-set" data-theme="f" data-content-theme="f">
+        <div data-role="collapsible" data-collapsed-icon="flat-time" data-expanded-icon="flat-cross" data-collapsed="false">
+          <h3>GUIDANCE AND ADMISSION</h3>
+          <p>I'm the collapsible content for section 1</p>
+		  <p>I'm the collapsible content for section 1</p>
+
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="flat-calendar" data-expanded-icon="flat-cross">
+          <h3>HEALTH SERVICES</h3>
+          <p>I'm the collapsible content for section 2</p>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+          <h3>SCHOLARSHIP UNIT AND STUDENT ORGANIZATIONS</h3>
+          <p>I'm the collapsible content for section 3</p>
+        </div>
+		  <div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+          <h3>STUDENT DISCIPLINE</h3>
+          <p>I'm the collapsible content for section 3</p>
+        </div>
+		<div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+         <h3>STUDENT LINGKAGES AND REPLACEMENT</h3>
+         <p>I'm the collapsible content for section 3</p>
+        </div>
+		<div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+         <h3>CULTURE AND ARTS</h3>
+         <p>I'm the collapsible content for section 3</p>
+        </div>
+		 <div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+         <h3>SPORTS DEVELOPMENT COORDINATOR</h3>
+         <p>I'm the collapsible content for section 3</p>
+        </div>
+		<div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+         <h3>PUBLICATION</h3>
+         <p>I'm the collapsible content for section 3</p>
+        </div>
+      </div>
+
+
+</div>	
+</div>
+  
+    <!--STUDENT MANUAL -->
+<div data-role="page" id="studentmanual">
+<div data-role="header" >
+      <a href="#mainpage" data-transition="flip" data-iconpos="notext" data-role="button" data-icon="home" data-theme="b" title="Home">Home</a>
+      <h1>STUDENT MANUAL</h1>
+   
+</div>
+<div data-role="content" role="main" >
+	
+		<div id="ui-body-test" class="ui-body ui-corner-al"  style="background: #E67E22">
+		<div  style="background: #D35400">
+		<div style="color: white;"><p>I am a div with classes  <br /> ui-body, ui-body-<span class="theme">a</span> and ui-corner-all.</p> </div>
+		</div>
+		<div style="color: white;"><p>I am a div with classes ui-body, ui-body-<span class="theme">a</span> and ui-corner-all.</p> </div>
+		</div>
+
+</div>	
+</div>
+  
+      <!--SURVIVAL KIT -->
+<div data-role="page" id="survivalkit">
+<div data-role="header" >
+      <a href="#mainpage" data-transition="flip" data-iconpos="notext" data-role="button" data-icon="home" data-theme="b" title="Home">Home</a>
+      <h1>SURVIVAL KIT</h1>
+   
+</div>
+<div data-role="content" role="main" >
+
+<div id="ui-body-test" class="ui-body"  style="background: #a0e555; color: WHITE;">
+	<h2>Welcome <br />to Gordon College!</h2>
+</div>
+		<button style="background: #2e3e4e; color: WHITE;" data-theme="a"  id="showcollegelife"  >READ MORE..</button>
+<div  class="ui-body" id="collegelife" style="background: #a0e555; display:none;">
+<div style="color: white; text-align: justify;"><p>College life is a challenging yet enjoyable time. This Survival Kit aims to give you tips on how to overcome the sea of challenges and emerge as victors in your four year stay with us.  Together with the Administration, College Officials, Faculty and Staff, we are one with you every step of the way till we celebrate your graduation day.  Read on and apply the tips which best fit you to ensure success in your chosen profession.  Together, let’s make dreams a reality! </p> </div>
+</div>	
+		
+
+<img src="img/successful.png" width="100%" height="100%">
+	<a href="#studyzone" data-transition="flip" data-role="button"  >STUDY ZONE</a>
+</div>	
+</div>
+
+
+
+
+
+
+ <!-- study zone -->
+<div data-role="page" id="studyzone">
+<div data-role="header" >
+      <a href="#survivalkit" data-transition="flip" data-iconpos="notext" data-role="button" data-icon="back" data-theme="b" title="Home">Home</a>
+      <h1>SURVIVAL KIT</h1>
+   
+</div>
+<div data-role="content" role="main" >
+
+<div id="ui-body-test" class="ui-body ui-corner-al"  style="background: #2ECC71">
+<div>
+<img src="img/SIQUIGRUOP.png" width="100%" height="100%">
+</div>
+<div data-role="collapsible-set" >
+       
+        <div data-role="collapsible" data-theme="d"   data-content-theme="d" data-collapsed-icon="flat-calendar" data-expanded-icon="flat-cross">
+         <h3>AT HOME:</h3>
+<p>	Turn on your study mode! Devote a regular 2-3 hours a day to study in your zone.</p> 
+<p>	Select a well-lighted location with proper ventilation and lighting.  Ensure that it will be far from distractions. This place should fit your specific personality and learning style.</p>   
+<p>	Devote this place for studying and accomplishing school work</p> 
+<p>	Place your books, pens, papers, notebooks, laptops and other materials strategically located at arms-length so you have quick access to them. </p> 
+<p>	Drink water or juice to keep your brain active.</p> 
+<p>	Hold back the desire to do text messaging, play your Sony PlayStations, Xbox, internet surfing and computer games.  Know that this time is a priority investment for your future.</p> 
+<p>	Take 3-5 minute breaks every hour of designated study time to keep our mind fresh and relaxed. </p> 
+        </div>
+         <div data-role="collapsible" data-theme="e"  data-content-theme="e" data-collapsed-icon="flat-calendar" data-expanded-icon="flat-cross">
+         <h3>AT SCHOOL:</h3>
+<p>	Find a study group or a study buddy who share the same aspirations as you do- eager to study the subjects and aims for the best marks in class. </p> 
+<p>	Places to really study would be the School Library, the Public Library, or the Student Lounge.  Keep your discussions at a minimum as other students are studying too.</p>   
+		</div>
+</div>
+</div>
+
+<br />
+
+</div>	
+</div>
+  
+  
+  
+  
+  
+  
+  
+  <!--this login and registration -->
+ <div data-role="page" id="logreg" >	
+
+    <div data-role="header" id="head">
+      <a href="index.html" data-transition="flip" data-iconpos="notext" data-role="button" data-icon="home" data-theme="b" title="Home">Home</a>
+      <h4>STUDENT WELFARE AND SERVICES</h4>
+   
+    </div>
+<br />
+<br />
+
+<div data-role="content" role="main" >
+<div id="ui-body-test" class="ui-body"  style="background: #E67E22">
+<div style="color: white; " id="txtlogin" >LOGIN</div>
+<div style="color: white; display:none;" id="txtregistration" >REGISTRATION</div>
+</div>
+<div id="DIVLOGIN" class="ui-body ui-corner-al" width="100%"  style="background: #3498DB">
+
+<table width="100%">
+<tr>
+<td>
+		<a href="#" data-role="button" data-icon="flat-man" data-iconpos="notext" data-theme="a" data-inline="true">Camera</a>
+</td>
+<td>		
+		<input  type="text" data-icon="flat-man"  placeholder="ID NUMBER" />
+</td>
+</tr>	
+
+
+<tr>
+<td>	
+		<a href="#" data-role="button" data-icon="flat-lock" data-iconpos="notext" data-theme="a" data-inline="true">Camera</a> 
+</td>		
+<td>		
+		<input type="text" data-icon="flat-lock" placeholder="PASSWORD"/>
+</td>
+</tr>		
+</table>	
+		<button data-theme="a" Data-icon="flat-checkround" >LOGIN</button>
+		<a data-role="button" Data-icon="flat-settings"  id="createaccount" >CREATE ACCOUNT</a>
+</div>
+<div id="DIVREGISTRATION" class="ui-body ui-corner-al" width="100%"  style="background: #2ecb71; display: none;" >
+	
+		<input  type="text"   placeholder="ID NUMBER" />
+		<input  type="text"   placeholder="FULL NAME" />
+		<input  type="text"   placeholder="COURSE AND YEAR" />
+		<div data-role="fieldcontain">
+        <select name="select-choice" id="select-choice-a" data-native-menu="false" data-theme="c">
+          <option value="CAHS">CAHS</option>
+          <option value="CBA">CBA</option>
+          <option value="CCS">CCS</option>
+          <option value="CEAS">CEAS</option>
+        </select>
+		</div>
+		<button data-theme="a" Data-icon="flat-checkround"  >REGISTER</button>
+		<button data-theme="a" Data-icon="flat-cross" id="cancel"  >CANCEL</button>
+
+</div>  
+  
+</div>
+</div>  
+  <div id="highlight"> </div>
+</body>
+</html>

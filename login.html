@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+  
+  <script>
+  $(document).ready(function(){
+ 
+$('#createaccount').click(function(){
+$('#DIVLOGIN').hide();
+$('#txtlogin').hide();
+$('#DIVREGISTRATION').slideToggle(300);
+$('#DIVREGISTRATION').show();
+$('#txtregistration').show();
+});
+ 
+
+$('#cancel').click(function(){
+$('#DIVREGISTRATION').hide();
+$('#txtregistration').hide();
+$('#DIVLOGIN').slideToggle(300);
+$('#DIVLOGIN').show();
+$('#txtlogin').show();
+}); 
+  
+  
+  
+  
+  
+  
+  });
+
+  </script>
+  
+  
+  
+  <style>
+
+  </style>
+  
+  
+  </head>
+<body onload="load()">
+  <div data-role="page" id="mainpage" >	
+<!--this menu -->
+    <div data-role="header" id="head">
+      <a href="index.html" data-transition="flip" data-iconpos="notext" data-role="button" data-icon="home" data-theme="b" title="Home">Home</a>
+      <h4>STUDENT WELFARE AND SERVICES</h4>
+   
+    </div>
+<br />
+<br />
+
+<div data-role="content" role="main" >
+<div id="ui-body-test" class="ui-body"  style="background: #E67E22">
+<div style="color: white; " id="txtlogin" >LOGIN</div>
+<div style="color: white; display:none;" id="txtregistration" >REGISTRATION</div>
+</div>
+<div id="DIVLOGIN" class="ui-body ui-corner-al" width="100%"  style="background: #3498DB">
+
+<table width="100%">
+<tr>
+<td>
+		<a href="#" data-role="button" data-icon="flat-man" data-iconpos="notext" data-theme="a" data-inline="true">Camera</a>
+</td>
+<td>		
+		<input  type="text" data-icon="flat-man"  placeholder="ID NUMBER" />
+</td>
+</tr>	
+
+
+<tr>
+<td>	
+		<a href="#" data-role="button" data-icon="flat-lock" data-iconpos="notext" data-theme="a" data-inline="true">Camera</a> 
+</td>		
+<td>		
+		<input type="text" data-icon="flat-lock" placeholder="PASSWORD"/>
+</td>
+</tr>		
+</table>	
+		<button data-theme="a" Data-icon="flat-checkround" >LOGIN</button>
+		<a data-role="button" Data-icon="flat-settings"  id="createaccount" >CREATE ACCOUNT</a>
+</div>
+<div id="DIVREGISTRATION" class="ui-body ui-corner-al" width="100%"  style="background: #2ecb71; display: none;" >
+	
+		<input  type="text"   placeholder="ID NUMBER" />
+		<input  type="text"   placeholder="FULL NAME" />
+		<input  type="text"   placeholder="COURSE AND YEAR" />
+		<div data-role="fieldcontain">
+        <select name="select-choice" id="select-choice-a" data-native-menu="false" data-theme="c">
+          <option value="CAHS">CAHS</option>
+          <option value="CBA">CBA</option>
+          <option value="CCS">CCS</option>
+          <option value="CEAS">CEAS</option>
+        </select>
+		</div>
+		<button data-theme="a" Data-icon="flat-checkround"  >REGISTER</button>
+		<button data-theme="a" Data-icon="flat-cross" id="cancel"  >CANCEL</button>
+
+</div>  
+  
+</div>
+</div>
+  <div id="highlight"> </div>
+</body>
+</html>
